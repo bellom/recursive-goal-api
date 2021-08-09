@@ -8,7 +8,7 @@ class GoalsController < ApplicationController
   end
 
   def show
-    @goal = find_user
+    @goal = find_user.list_goals
     render json: @goal, only: [:id, :title, :progress]
   end
 
