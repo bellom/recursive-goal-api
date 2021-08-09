@@ -3,7 +3,7 @@ class CreateGoals < ActiveRecord::Migration[6.0]
     create_table :goals do |t|
       t.string :title
       t.integer :progress
-      t.references :parent_id, null: false, foreign_key: true
+      t.references :parent, index: true
 
       t.timestamps
     end

@@ -10,16 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_09_152114) do
+ActiveRecord::Schema.define(version: 2021_08_09_171744) do
 
   create_table "goals", force: :cascade do |t|
     t.string "title"
     t.integer "progress"
-    t.integer "parent_id_id", null: false
+    t.integer "parent_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["parent_id_id"], name: "index_goals_on_parent_id_id"
+    t.index ["parent_id"], name: "index_goals_on_parent_id"
   end
 
-  add_foreign_key "goals", "parent_ids"
 end

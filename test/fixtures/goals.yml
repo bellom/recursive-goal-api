@@ -3,9 +3,9 @@
 one:
   title: MyString
   progress: 1
-  parent_id: one
+  parent: one
 
 two:
   title: MyString
   progress: 1
-  parent_id: two
+  parent: two
