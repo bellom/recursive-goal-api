@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  get 'goals/index'
-  get 'goals/show'
-  get 'goals/update'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :goals, only: %w[index show update]
+
+  get '/goals', to: 'goals#index'
+  get '/goals/:id', to: 'goals#show'
+  post '/goals/:id', to: 'goals#update'
 end
