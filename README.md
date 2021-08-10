@@ -1,9 +1,11 @@
 
 ## Endpoints
 Get a specific goal with all its children
+
 GET `http://localhost:3000/goals/1`
 
 Update a Goal
+
 POST `http://localhost:3000/goals/3`
 
 ## Installation
