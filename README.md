@@ -1,24 +1,23 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Endpoints
+Get a specific goal with all its children
 
-Things you may want to cover:
+GET `http://localhost:3000/goals/1`
 
-* Ruby version
+Update a Goal
 
-* System dependencies
+POST `http://localhost:3000/goals/3`
 
-* Configuration
+## Installation
 
-* Database creation
+1. Clone the project to your local directory
 
-* Database initialization
+```
+git clone https://github.com/bellom/recursive-goal-api.git
+```
 
-* How to run the test suite
+2. Run `bundle install`
 
-* Services (job queues, cache servers, search engines, etc.)
+3. Run `rails db:migrate`
 
-* Deployment instructions
-
-* ...
+4. Run `rails s`
